@@ -6,7 +6,7 @@ type Service struct {
 	Nodes NodesService
 }
 
-func NewService() *Service {
+func RegisterServices() *Service {
 	s := new(Service)
 
 	s.Nodes = NewNodesService()
